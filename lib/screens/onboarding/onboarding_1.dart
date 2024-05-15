@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class Onboarding extends StatelessWidget {
+  const Onboarding({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,11 +30,18 @@ class MainPage extends StatelessWidget {
                   // top: 0,
                   // right: 100,
                   child: Container(
-                    width: 50.w,
-                    height: 50.h,
+                    width: 140.w,
+                    height: 60.h,
                     decoration: BoxDecoration(color: Colors.yellow),
                     child: Center(
-                      child: Text('Loopday App'),
+                      child: Text(
+                        'Loopday App',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 25.sp,
+                        ),
+                      ),
                     ),
                   ),
                 ),
