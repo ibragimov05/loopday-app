@@ -155,11 +155,12 @@ class MainScreen extends StatelessWidget {
                           text: const TextSpan(
                             children: [
                               TextSpan(
-                                  text:
-                                      '16      17       18        19       20      ',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600)),
+                                text:
+                                    '16      17       18        19       20      ',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600),
+                              ),
                               TextSpan(
                                 text: ' 21       22',
                                 style: TextStyle(
@@ -217,7 +218,8 @@ class MainScreen extends StatelessWidget {
                           child: const Text(
                             'New',
                             style: TextStyle(
-                                color: Colors.black, fontWeight: FontWeight.w700),
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700),
                           ),
                         ),
                       ],

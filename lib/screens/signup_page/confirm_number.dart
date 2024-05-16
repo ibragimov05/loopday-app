@@ -20,7 +20,7 @@ class _ConfirmNumberState extends State<ConfirmNumber> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: CustomAppBar(
           nextPageName: AddPhoneNumber(),
@@ -80,7 +80,7 @@ class _ConfirmNumberState extends State<ConfirmNumber> {
                   showMessage();
                 },
               ),
-              Center(child: TermsOfUse()),
+              const Center(child: TermsOfUse()),
             ],
           ),
         ),
@@ -150,7 +150,7 @@ class _ConfirmNumberState extends State<ConfirmNumber> {
                   ),
                 ),
                 Text(
-                  'Congratulation you are succes to change your profile',
+                  'Congratulation you are success to change your profile',
                   textAlign: TextAlign.center,
                   style:
                       TextStyle(fontSize: 14.sp, color: CustomColor.textColor),
@@ -164,7 +164,7 @@ class _ConfirmNumberState extends State<ConfirmNumber> {
                     context,
                     CupertinoPageRoute(
                       builder: (context) {
-                        return MainScreen();
+                        return const MainScreen();
                       },
                     ),
                   );

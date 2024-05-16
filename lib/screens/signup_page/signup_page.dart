@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:loopday_app/main.dart';
 import 'package:loopday_app/screens/signup_page/add_phone_number.dart';
 import 'package:loopday_app/screens/login_page/login_page.dart';
 import 'package:loopday_app/screens/main_page/main_page.dart';
@@ -42,7 +41,7 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       /// back button
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: CustomAppBar(nextPageName: MainPage()),
       ),
@@ -128,7 +127,7 @@ class _SignupPageState extends State<SignupPage> {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        TextSpan(
+                        const TextSpan(
                           text: 'Sign in here',
                           style: TextStyle(
                             decoration: TextDecoration.underline,
@@ -199,7 +198,7 @@ class _SignupPageState extends State<SignupPage> {
                       context,
                       CupertinoPageRoute(
                         builder: (context) {
-                          return AddPhoneNumber();
+                          return const AddPhoneNumber();
                         },
                       ),
                     );
@@ -209,7 +208,7 @@ class _SignupPageState extends State<SignupPage> {
               10.height(),
 
               /// terms of use text
-              Center(child: TermsOfUse()),
+              const Center(child: TermsOfUse()),
             ],
           ),
         ),

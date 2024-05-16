@@ -5,7 +5,7 @@ import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 class CustomTextField extends StatefulWidget {
   final IconData icon;
   final String labelText;
-  bool isPassword;
+  final bool isPassword;
   final String errorMessage;
   final TextEditingController textEditingController;
 
@@ -58,11 +58,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
           borderRadius: BorderRadius.circular(8),
         ),
         errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red, width: 2),
+          borderSide: const BorderSide(color: Colors.red, width: 2),
           borderRadius: BorderRadius.circular(8),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red, width: 2),
+          borderSide: const BorderSide(color: Colors.red, width: 2),
           borderRadius: BorderRadius.circular(8),
         ),
         hintText: widget.labelText,

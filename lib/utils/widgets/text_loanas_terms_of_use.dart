@@ -20,7 +20,7 @@ class TermsOfUse extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            TextSpan(
+            const TextSpan(
               text: 'Terms of Use',
               style: TextStyle(
                 color: Colors.black,
@@ -34,7 +34,7 @@ class TermsOfUse extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            TextSpan(
+            const TextSpan(
               text: 'Privacy Policy',
               style: TextStyle(
                 color: Colors.black,

@@ -57,7 +57,7 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
               35.height(),
-              Container(
+              SizedBox(
                 width: 300.w,
                 height: 350.h,
                 child: Image.asset(
@@ -66,7 +66,7 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
               15.height(),
-        
+
               /// button for taking next page
               MainBlueButton(
                 buttonText: 'Create Account',
@@ -74,25 +74,26 @@ class _MainPageState extends State<MainPage> {
                   Navigator.pushReplacement(
                     context,
                     CupertinoPageRoute(
-                      builder: (context) {
-                        return SignupPage();
+                      builder: (BuildContext context) {
+                        return const SignupPage();
                       },
                     ),
                   );
                 },
               ),
-        
+
               /// two button to login via apple or google
               20.height(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   LoginButtons(icoPath: Assets.appleIcon, buttonText: 'Apple'),
-                  LoginButtons(icoPath: Assets.googleIcon, buttonText: 'Google'),
+                  LoginButtons(
+                      icoPath: Assets.googleIcon, buttonText: 'Google'),
                 ],
               ),
               30.height(),
-        
+
               /// login button
               ZoomTapAnimation(
                 onTap: () {
@@ -133,6 +134,4 @@ class _MainPageState extends State<MainPage> {
       ),
     );
   }
-
-
 }

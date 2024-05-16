@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:loopday_app/screens/login_page/login_page.dart';
 import 'package:loopday_app/screens/signup_page/confirm_number.dart';
 import 'package:loopday_app/screens/signup_page/signup_page.dart';
 import 'package:loopday_app/utils/colors/text_colors.dart';
@@ -17,7 +16,7 @@ class AddPhoneNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: CustomAppBar(nextPageName: SignupPage()),
       ),
@@ -59,7 +58,7 @@ class AddPhoneNumber extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
-                    TextSpan(
+                    const TextSpan(
                       text: 'Email',
                       style: TextStyle(
                         color: Color(0xFF4454fc),
@@ -77,14 +76,14 @@ class AddPhoneNumber extends StatelessWidget {
                     context,
                     CupertinoPageRoute(
                       builder: (context) {
-                        return ConfirmNumber();
+                        return const ConfirmNumber();
                       },
                     ),
                   );
                 },
               ),
               10.height(),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TermsOfUse(),

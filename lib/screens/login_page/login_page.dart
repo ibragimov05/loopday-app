@@ -40,7 +40,6 @@ class _LoginPageState extends State<LoginPage> {
           padding:
               EdgeInsets.only(left: 20.w, right: 20.w, top: 70.h, bottom: 10.h),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -93,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                           context,
                           CupertinoPageRoute(
                             builder: (context) {
-                              return SignupPage();
+                              return const SignupPage();
                             },
                           ),
                         );
@@ -109,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            TextSpan(
+                            const TextSpan(
                               text: 'Sign up here',
                               style: TextStyle(
                                 color: Colors.black,
@@ -161,7 +160,7 @@ class _LoginPageState extends State<LoginPage> {
                           context,
                           CupertinoPageRoute(
                             builder: (context) {
-                              return MainScreen();
+                              return const MainScreen();
                             },
                           ),
                         );
@@ -183,7 +182,7 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                   10.height(),
-                  TermsOfUse(),
+                  const TermsOfUse(),
                 ],
               ),
             ],

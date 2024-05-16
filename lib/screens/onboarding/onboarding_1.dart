@@ -12,7 +12,7 @@ class Onboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF5F5FA),
+      backgroundColor: const Color(0xFFF5F5FA),
       body: Padding(
         padding: EdgeInsets.only(left: 10.0.w, right: 10.w),
         child: Column(
@@ -63,7 +63,7 @@ class Onboarding extends StatelessWidget {
                   context,
                   CupertinoPageRoute(
                     builder: (context) {
-                      return MainPage();
+                      return const MainPage();
                     },
                   ),
                 );
@@ -91,7 +91,6 @@ class Onboarding extends StatelessWidget {
             photoPath,
           ),
         ),
-        // color: color,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -103,7 +102,7 @@ class Onboarding extends StatelessWidget {
               margin: EdgeInsets.only(right: 5.w),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5.r),
-                color: Color(0xFF5363FA),
+                color: const Color(0xFF5363FA),
               ),
             ),
         ],
