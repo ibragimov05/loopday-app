@@ -60,7 +60,6 @@ class _MainPageState extends State<MainPage> {
               Container(
                 width: 300.w,
                 height: 350.h,
-                color: Colors.yellow,
                 child: Image.asset(
                   'assets/images/create_account_page/phone.png',
                   fit: BoxFit.fill,

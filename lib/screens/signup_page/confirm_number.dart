@@ -189,6 +189,7 @@ class _ConfirmNumberState extends State<ConfirmNumber> {
               ),
             ],
           );
-        });
+        },
+    );
   }
 }
